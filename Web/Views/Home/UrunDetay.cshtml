@@ -1,0 +1,81 @@
+@model Web.Models.Urun
+
+@{
+    ViewData["Title"] = "Ürün Detayları";
+}
+
+<div class="card mx-auto shadow-sm" style="max-width: 600px;">
+    <div class="card-header text-center">
+        <h2>@Model.Ad</h2>
+    </div>
+    <div class="card-body">
+        <div class="text-center mb-4">
+            <img src="@(!string.IsNullOrEmpty(Model.Gorsel) ? Model.Gorsel : "/images/default.png")"
+                alt="@Model.Ad Görseli" class="img-fluid rounded" style="max-height: 300px; object-fit: cover;">
+        </div>
+        <dl class="row">
+            <dt class="col-sm-4 fw-bold">Id</dt>
+            <dd class="col-sm-8">@Model.Id</dd>
+
+            <dt class="col-sm-4 fw-bold">Ad</dt>
+            <dd class="col-sm-8">@Model.Ad</dd>
+
+            <dt class="col-sm-4 fw-bold">Açıklama</dt>
+            <dd class="col-sm-8">@Model.Aciklama</dd>
+
+            <dt class="col-sm-4 fw-bold">Fiyat</dt>
+            <dd class="col-sm-8">@Model.Fiyat.ToString("C")</dd>
+
+            <dt class="col-sm-4 fw-bold">Stok</dt>
+            <dd class="col-sm-8">@Model.Stok</dd>
+
+            <dt class="col-sm-4 fw-bold">Kategori Id</dt>
+            <dd class="col-sm-8">@Model.KategoriId</dd>
+        </dl>
+        <form asp-action="SepeteEkle" method="post" class="text-center mt-4">
+            <input type="hidden" name="urunId" value="@Model.Id" />
+            <button type="submit" class="btn btn-success btn-lg">
+                <i class="bi bi-cart-plus"></i> Sepete Ekle
+            </button>
+        </form>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-action="Index" class="btn btn-primary">
+            <i class="bi bi-arrow-left"></i> Geri Dön
+        </a>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #e9ecef;
+        font-weight: bold;
+    }
+
+    .card-footer {
+        background-color: #f8f9fa;
+    }
+
+    .card-body dl dt {
+        color: #495057;
+    }
+
+    .card-body dl dd {
+        color: #343a40;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+</style>

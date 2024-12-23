@@ -1,0 +1,15 @@
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/bin/Debug/net9.0/CrossCuttingConcerns.deps.json
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/bin/Debug/net9.0/CrossCuttingConcerns.dll
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/bin/Debug/net9.0/CrossCuttingConcerns.pdb
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/bin/Debug/net9.0/Domain.dll
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/bin/Debug/net9.0/Domain.pdb
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.csproj.AssemblyReference.cache
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.GeneratedMSBuildEditorConfig.editorconfig
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.AssemblyInfoInputs.cache
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.AssemblyInfo.cs
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.csproj.CoreCompileInputs.cache
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCut.80C53BBD.Up2Date
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.dll
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/refint/CrossCuttingConcerns.dll
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.pdb
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/ref/CrossCuttingConcerns.dll

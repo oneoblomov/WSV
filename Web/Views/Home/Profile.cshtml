@@ -1,0 +1,46 @@
+@model Web.Models.Kullanici
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Profil</h2>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Kullanıcı Bilgileri</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-3">Email</dt>
+                        <dd class="col-sm-9">@Model.Email</dd>
+                        <dt class="col-sm-3">Şifre</dt>
+                        <dd class="col-sm-9">@Model.Sifre</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-end">
+                    <form asp-area="" asp-controller="Home" asp-action="Logout" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-box-arrow-right"></i> Logout
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-footer {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+</style>

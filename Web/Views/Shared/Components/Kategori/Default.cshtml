@@ -1,0 +1,38 @@
+@model IEnumerable<Web.Models.Kategori>
+
+<div class="kategori-listesi">
+    <h3 class="mb-4">Kategoriler</h3>
+    <ul class="list-group">
+        @foreach (var kategori in Model)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 shadow-sm mb-2">
+                <a href="@Url.Action("Kategori", "Home", new { id = kategori.Id })" class="text-decoration-none text-dark">
+                    @kategori.Ad
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+<style>
+    .kategori-listesi {
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+    }
+
+    .list-group-item {
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #e9ecef;
+    }
+
+    .list-group-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+</style>

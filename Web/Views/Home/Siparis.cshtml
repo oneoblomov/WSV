@@ -1,0 +1,46 @@
+@model IEnumerable<Web.Models.Siparis>
+
+@{
+    ViewData["Title"] = "Sepetimdekiler";
+}
+
+<h2>Siparişlerim</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Urun.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fiyat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Miktar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SiparisDurum.D_Adi)
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Urun.Ad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fiyat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Miktar)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SiparisDurum.D_Adi)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

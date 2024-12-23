@@ -1,0 +1,15 @@
+/home/kaplan/Desktop/WSV/Integration/bin/Debug/net9.0/Integration.deps.json
+/home/kaplan/Desktop/WSV/Integration/bin/Debug/net9.0/Integration.dll
+/home/kaplan/Desktop/WSV/Integration/bin/Debug/net9.0/Integration.pdb
+/home/kaplan/Desktop/WSV/Integration/bin/Debug/net9.0/Domain.dll
+/home/kaplan/Desktop/WSV/Integration/bin/Debug/net9.0/Domain.pdb
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.csproj.AssemblyReference.cache
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.GeneratedMSBuildEditorConfig.editorconfig
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.AssemblyInfoInputs.cache
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.AssemblyInfo.cs
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.csproj.CoreCompileInputs.cache
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integrat.B0B6ED80.Up2Date
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.dll
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/refint/Integration.dll
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.pdb
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/ref/Integration.dll

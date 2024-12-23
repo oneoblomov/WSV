@@ -1,0 +1,17 @@
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Infrastructure.deps.json
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Infrastructure.runtimeconfig.json
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Domain.dll
+/home/kaplan/Desktop/WSV/Infrastructure/bin/Debug/net9.0/Domain.pdb
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.AssemblyReference.cache
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfoInputs.cache
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfo.cs
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastr.15EFFBFE.Up2Date
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.dll
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
+/home/kaplan/Desktop/WSV/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll

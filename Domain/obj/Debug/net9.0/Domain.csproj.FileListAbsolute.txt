@@ -1,0 +1,11 @@
+/home/kaplan/Desktop/WSV/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/kaplan/Desktop/WSV/Domain/bin/Debug/net9.0/Domain.dll
+/home/kaplan/Desktop/WSV/Domain/bin/Debug/net9.0/Domain.pdb
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.dll
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.pdb
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/ref/Domain.dll

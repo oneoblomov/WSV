@@ -1,0 +1,16 @@
+// filepath: /home/kaplan/Desktop/WSV/.vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Web/Web.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

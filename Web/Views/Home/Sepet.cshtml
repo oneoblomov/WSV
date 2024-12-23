@@ -1,0 +1,85 @@
+@model IEnumerable<Web.Models.Sepet>
+
+@{
+    ViewData["Title"] = "Sepetimdekiler";
+}
+
+<h2 class="mb-4">Sepetimdekiler</h2>
+
+<table class="table table-hover shadow-sm">
+    <thead class="thead-light">
+        <tr>
+            <th>Ürün Adı</th>
+            <th>Miktar</th>
+            <th>Fiyat</th>
+            <th>Toplam</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Urun.Ad</td>
+                <td>@item.Miktar</td>
+                <td>@item.Urun.Fiyat.ToString("C")</td>
+                <td>@(item.Urun.Fiyat * item.Miktar)</td>
+                <td>
+                    <form asp-action="SepettenSil" method="post" class="d-inline">
+                        <input type="hidden" name="urunId" value="@item.Urun.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Sil
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model.Any())
+{
+    <div class="text-right mt-4">
+    <form asp-action="SepetiOnayla" method="post">
+        <button type="submit" class="btn btn-success btn-lg">
+            <i class="bi bi-check-circle"></i> Sepeti Onayla
+        </button>
+    </form>
+</div>
+}
+else
+{
+    <div class="text-center mt-4">
+    <p>Sepetinizde ürün bulunmamaktadır.</p>
+</div>
+}
+
+<style>
+    .table {
+        border-radius: 15px;
+    }
+
+    .thead-light {
+        background-color: #f8f9fa;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+</style>

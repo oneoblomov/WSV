@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Web.Models.Urun>
+
+@{
+    ViewData["Title"] = ViewData["name"];
+}
+
+
+
+<h2>@ViewData["Title"]</h2>
+<br>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <a asp-action="UrunDetay" asp-route-id="@item.Id" class="card h-100 shadow-sm text-decoration-none text-dark">
+                <div class="card-img-wrapper">
+                    <img src="@(!string.IsNullOrEmpty(item.Gorsel) ? item.Gorsel : "/images/default.jpg")"
+                        class="card-img-top" alt="@item.Ad Görseli">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@item.Ad</h5>
+                    <p class="card-text text-muted">@item.Aciklama</p>
+                    <p class="fw-bold text-primary">@item.Fiyat.ToString("C")</p>
+                    <p class="text-muted">Stok: @item.Stok</p>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center mt-4">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" asp-action="Index" asp-route-kategoriId="@ViewData["KategoriId"]"
+                    asp-route-query="@ViewBag.Query" asp-route-page="@i">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
+@if (TempData["UyariMesaji"] != null)
+{
+    <div class="alert alert-warning" role="alert">
+    @TempData["UyariMesaji"]
+</div>
+}
+<style>
+    /* Kart genel düzeni */
+    .card {
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: #fff;
+        border: none;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Görsel düzeni */
+    .card-img-wrapper {
+        height: 200px;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+
+    /* Başlık ve metin düzeni */
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Responsive sütunlar */
+    .row-cols-1 .col {
+        margin-bottom: 1.5rem;
+    }
+</style>

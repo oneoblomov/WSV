@@ -1,0 +1,62 @@
+@model IEnumerable<Web.Models.Urun>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+    @foreach (var urun in Model)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="@(!string.IsNullOrEmpty(urun.Gorsel) ? urun.Gorsel : "/images/default.jpg")" class="card-img-top"
+                    alt="@urun.Ad Görseli">
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">@urun.Ad</h5>
+                    <p class="card-text text-truncate">@urun.Aciklama</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <small class="text-muted">@urun.GorSayi Görüntülenme</small>
+                    <small class="text-muted">@urun.Fiyat.ToString("C")</small>
+                </div>
+                <a href="@Url.Action("UrunDetay", "Home", new { id = urun.Id })" class="stretched-link"></a>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        padding: 0.75rem;
+    }
+
+    .card-footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .card-title,
+    .card-text {
+        margin-bottom: 0.5rem;
+    }
+
+    .text-truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-img-top {
+        height: 150px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+</style>
