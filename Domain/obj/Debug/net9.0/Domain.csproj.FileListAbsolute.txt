@@ -9,3 +9,4 @@
 /home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/refint/Domain.dll
 /home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.pdb
 /home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/ref/Domain.dll
+/home/kaplan/Desktop/WSV/Domain/obj/Debug/net9.0/Domain.sourcelink.json

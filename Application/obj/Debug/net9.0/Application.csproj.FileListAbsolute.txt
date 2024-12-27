@@ -15,3 +15,4 @@
 /home/kaplan/Desktop/WSV/Application/obj/Debug/net9.0/refint/Application.dll
 /home/kaplan/Desktop/WSV/Application/obj/Debug/net9.0/Application.pdb
 /home/kaplan/Desktop/WSV/Application/obj/Debug/net9.0/ref/Application.dll
+/home/kaplan/Desktop/WSV/Application/obj/Debug/net9.0/Application.sourcelink.json

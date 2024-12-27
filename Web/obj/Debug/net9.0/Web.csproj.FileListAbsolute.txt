@@ -261,3 +261,4 @@
 /home/kaplan/Desktop/WSV/Web/obj/Debug/net9.0/Web.genruntimeconfig.cache
 /home/kaplan/Desktop/WSV/Web/obj/Debug/net9.0/ref/Web.dll
 /home/kaplan/Desktop/WSV/Web/obj/Debug/net9.0/compressed/f61f1xnw7n-lugek5hnai.gz
+/home/kaplan/Desktop/WSV/Web/obj/Debug/net9.0/Web.sourcelink.json

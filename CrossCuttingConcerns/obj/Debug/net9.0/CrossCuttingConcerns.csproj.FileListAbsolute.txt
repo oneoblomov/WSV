@@ -13,3 +13,4 @@
 /home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/refint/CrossCuttingConcerns.dll
 /home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.pdb
 /home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/ref/CrossCuttingConcerns.dll
+/home/kaplan/Desktop/WSV/CrossCuttingConcerns/obj/Debug/net9.0/CrossCuttingConcerns.sourcelink.json

@@ -13,3 +13,4 @@
 /home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/refint/Integration.dll
 /home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.pdb
 /home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/ref/Integration.dll
+/home/kaplan/Desktop/WSV/Integration/obj/Debug/net9.0/Integration.sourcelink.json
