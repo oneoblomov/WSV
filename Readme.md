@@ -118,11 +118,6 @@ Projenin bazı ekran görüntüleri aşağıda paylaşılmıştır:
 
 ![siparislerim Sayfası](Web/screenshots/ordersPage.png)
 
-
-## Proje Linki
-
-[GitHub Repository](https://github.com/oneoblomov/WSV)
-
 ## Lisans
 
 Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
