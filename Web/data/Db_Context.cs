@@ -14,8 +14,23 @@ namespace Web.Data
         public DbSet<Sepet> Sepetler { get; set; }
         public DbSet<SDurum> SDurumlari { get; set; }
 
+        // Views
+        public DbSet<UrunView> UrunlerView { get; set; }
+        public DbSet<SiparisView> SiparislerView { get; set; }
+        public DbSet<SepetView> SepetlerView { get; set; }
+        public DbSet<KullaniciView> KullanicilarView { get; set; }
+        //
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            //
+            modelBuilder.Entity<SiparisView>().HasNoKey().ToView("siparisler_view");
+            modelBuilder.Entity<UrunView>().HasNoKey().ToView("urunler_view");
+            modelBuilder.Entity<SepetView>().HasNoKey().ToView("sepet_view");
+            modelBuilder.Entity<KullaniciView>().HasNoKey().ToView("kullanici_view");
+            //
+
             modelBuilder.Entity<Kullanici>()
                 .HasIndex(k => k.Email)
                 .IsUnique();

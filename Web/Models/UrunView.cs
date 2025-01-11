@@ -1,14 +1,13 @@
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web.Models
 {
-    [Table("urun")]
-    public class Urun
+    [Table("urunler_view")]
+    public class UrunView
     {
         [Key]
-        [Column("urun_id")]
+        [Column("id")]
         public int Id { get; set; }
 
         [Column("ad")]
@@ -17,7 +16,7 @@ namespace Web.Models
         [Column("aciklama")]
         public string Aciklama { get; set; } = string.Empty;
 
-        [Column("gorselyolu")]
+        [Column("gorsel")]
         public string Gorsel { get; set; } = string.Empty;
 
         [Column("fiyat")]
@@ -26,16 +25,10 @@ namespace Web.Models
         [Column("stok")]
         public int Stok { get; set; }
 
-        [Column("kategori_id")]
+        [Column("kategoriid")]
         public int KategoriId { get; set; }
 
-        [ForeignKey("KategoriId")]
-        public Kategori Kategori { get; set; } = null!;
-
-        [Column("gor_sayi")]
-        public int GorSayi { get; set; }
-
-        public ICollection<Siparis> Siparisler { get; set; } = new List<Siparis>();
-        public ICollection<Sepet> Sepetler { get; set; } = new List<Sepet>();
+        [Column("kategoriad")]
+        public string KategoriAd { get; set; } = string.Empty;
     }
 }

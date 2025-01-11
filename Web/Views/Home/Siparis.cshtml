@@ -1,4 +1,4 @@
-@model IEnumerable<Web.Models.Siparis>
+@model IEnumerable<Web.Models.SiparisView>
 
 @{
     ViewData["Title"] = "Sepetimdekiler";
@@ -10,16 +10,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Urun.Ad)
+                @Html.DisplayNameFor(model => model.First().UrunAd)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Fiyat)
+                @Html.DisplayNameFor(model => model.First().Fiyat)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Miktar)
+                @Html.DisplayNameFor(model => model.First().Miktar)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SiparisDurum.D_Adi)
+                @Html.DisplayNameFor(model => model.First().SiparisDurumAd)
             </th>
         </tr>
     </thead>
@@ -29,7 +29,7 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Urun.Ad)
+                    @Html.DisplayFor(modelItem => item.UrunAd)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Fiyat)
@@ -38,7 +38,7 @@
                     @Html.DisplayFor(modelItem => item.Miktar)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SiparisDurum.D_Adi)
+                    @Html.DisplayFor(modelItem => item.SiparisDurumAd)
                 </td>
             </tr>
         }

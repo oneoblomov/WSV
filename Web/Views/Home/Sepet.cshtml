@@ -1,4 +1,4 @@
-@model IEnumerable<Web.Models.Sepet>
+@model IEnumerable<Web.Models.SepetView>
 
 @{
     ViewData["Title"] = "Sepetimdekiler";
@@ -20,13 +20,13 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.Urun.Ad</td>
+                <td>@item.UrunAd</td>
                 <td>@item.Miktar</td>
-                <td>@item.Urun.Fiyat.ToString("C")</td>
-                <td>@(item.Urun.Fiyat * item.Miktar)</td>
+                <td>@item.Fiyat.ToString("C")</td>
+                <td>@(item.Fiyat * item.Miktar)</td>
                 <td>
                     <form asp-action="SepettenSil" method="post" class="d-inline">
-                        <input type="hidden" name="urunId" value="@item.Urun.Id" />
+                        <input type="hidden" name="urunId" value="@item.UrunId" />
                         <button type="submit" class="btn btn-danger btn-sm">
                             <i class="bi bi-trash"></i> Sil
                         </button>
@@ -45,6 +45,10 @@
             <i class="bi bi-check-circle"></i> Sepeti Onayla
         </button>
     </form>
+</div>
+    <div class="text-right mt-2">
+    <h4>Toplam Fiyat: @ViewBag.TotalPrice.ToString("C")</h4>
+    <h4>Toplam Ürün Sayısı: @ViewBag.TotalItemCount</h4>
 </div>
 }
 else

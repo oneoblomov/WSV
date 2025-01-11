@@ -1,10 +1,8 @@
-﻿@model IEnumerable<Web.Models.Urun>
+﻿@model IEnumerable<Web.Models.UrunView>
 
 @{
     ViewData["Title"] = ViewData["name"];
 }
-
-
 
 <h2>@ViewData["Title"]</h2>
 <br>
@@ -45,8 +43,8 @@
     @TempData["UyariMesaji"]
 </div>
 }
+
 <style>
-    /* Kart genel düzeni */
     .card {
         border-radius: 15px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -59,7 +57,6 @@
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     }
 
-    /* Görsel düzeni */
     .card-img-wrapper {
         height: 200px;
         overflow: hidden;
@@ -78,7 +75,6 @@
         transform: scale(1.05);
     }
 
-    /* Başlık ve metin düzeni */
     .card-title {
         font-size: 1.25rem;
         font-weight: bold;
@@ -90,8 +86,16 @@
         line-height: 1.5;
     }
 
-    /* Responsive sütunlar */
-    .row-cols-1 .col {
-        margin-bottom: 1.5rem;
+    .pagination .page-item.active .page-link {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .pagination .page-link {
+        color: #007bff;
+    }
+
+    .pagination .page-link:hover {
+        color: #0056b3;
     }
 </style>
